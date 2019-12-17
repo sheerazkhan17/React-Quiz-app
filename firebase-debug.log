@@ -1,0 +1,59 @@
+[debug] [2019-12-16T11:52:36.064Z] ----------------------------------------------------------------------
+[debug] [2019-12-16T11:52:36.074Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\sheeraz\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2019-12-16T11:52:36.075Z] CLI Version:   7.10.0
+[debug] [2019-12-16T11:52:36.075Z] Platform:      win32
+[debug] [2019-12-16T11:52:36.075Z] Node Version:  v12.13.1
+[debug] [2019-12-16T11:52:36.078Z] Time:          Mon Dec 16 2019 16:52:36 GMT+0500 (Pakistan Standard Time)
+[debug] [2019-12-16T11:52:36.079Z] ----------------------------------------------------------------------
+[debug] [2019-12-16T11:52:36.079Z] 
+[debug] [2019-12-16T11:52:36.111Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-12-16T11:52:36.112Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\sheeraz\Desktop\React.js-quiz-app
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using QuizApp.
+[debug] [2019-12-16T11:52:46.419Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-12-16T11:52:46.420Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-12-16T11:52:47.144Z] <<< HTTP RESPONSE 400
+[debug] [2019-12-16T11:52:47.149Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/QuizApp  
+ 
+[debug] [2019-12-16T11:52:47.471Z] <<< HTTP RESPONSE 401
+[debug] [2019-12-16T11:52:47.471Z] <<< HTTP RESPONSE BODY
+[debug] [2019-12-16T11:52:47.474Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2019-12-16T11:52:47.783Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (C:\Users\sheeraz\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Request._callback (C:\Users\sheeraz\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:39:35)
+    at Request.self.callback (C:\Users\sheeraz\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:210:5)
+    at Request.EventEmitter.emit (domain.js:475:20)
+    at Request.<anonymous> (C:\Users\sheeraz\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1161:10)
+    at Request.emit (events.js:210:5)
+    at Request.EventEmitter.emit (domain.js:475:20)
+    at IncomingMessage.<anonymous> (C:\Users\sheeraz\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1083:12)
+    at Object.onceWrapper (events.js:299:28)
+    at IncomingMessage.emit (events.js:215:7)
+    at IncomingMessage.EventEmitter.emit (domain.js:475:20)
+    at endReadableNT (_stream_readable.js:1184:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+[error] 
+[error] Error: Failed to get Firebase project QuizApp. Please make sure the project exists and your account has permission to access it.
